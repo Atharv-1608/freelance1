@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Cali";
+    src: url('./fonts/font.ttf');
+}
+
+@font-face {
+    font-family: "hellnore";
+    src: url("./fonts/font1.ttf");
+}
+
+@font-face {
+    font-family: "adelia";
+    src: url("./fonts/adelia.ttf");
+}
+
+@font-face {
+    font-family: "classy";
+    src: url("./fonts/classy.ttf");
+}
