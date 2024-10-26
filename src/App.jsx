@@ -19,7 +19,7 @@ function App() {
      </div>
     </div>
     <div>
-      <div className="space-y-2 bg-[#f2f3f4]">
+      <div className=" bg-[#f2f3f4]">
     <Images />
     <Images2 />
     <Images3 />
