@@ -39,37 +39,37 @@ const Images = () => {
   return (
     <div className='bg-[#f2f3f4] min-h-screen flex items-center justify-center p-4'>
       <div className='w-full max-w-[500px] aspect-[3/4] relative group'>
-        <div className=' h-[75%] bg-[#f0f0f0] rounded-2xl overflow-hidden shadow-lg'>
+        <div className='w-full h-full rounded-2xl overflow-hidden shadow-lg'>
           <img
             src={slides[currentIndex].url}
             alt={`Slide ${currentIndex + 1}`}
-            className='w-full h-full object-contain'
+            className='w-full h-full object-contain rounded-2xl'
           />
         </div>
         
         {/* Left Arrow */}
-        <div className='hidden group-hover:block absolute top-[40%]  left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <div className='hidden group-hover:block absolute top-[40%] -translate-y-1/2 left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
           <BsChevronCompactLeft onClick={prevSlide} size={30} aria-label="Previous slide" />
         </div>
         
         {/* Right Arrow */}
-        <div className='hidden group-hover:block absolute top-[40%]  right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <div className='hidden group-hover:block absolute top-[40%] -translate-y-1/2 right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
           <BsChevronCompactRight onClick={nextSlide} size={30} aria-label="Next slide" />
         </div>
         
         {/* Dots for navigation */}
-        <div className='flex justify-center py-2'>
+        <div className='absolute bottom-4 left-1/2 -translate-x-1/2 flex justify-center space-x-2'>
           {slides.map((slide, slideIndex) => (
-            <div
+            <button
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className='text-2xl cursor-pointer'
+              className='text-2xl cursor-pointer focus:outline-none'
+              aria-label={`Go to slide ${slideIndex + 1}`}
             >
               <RxDotFilled 
-                className={`transition-all duration-300 ${currentIndex === slideIndex ? 'text-gray-600 scale-150' : 'text-gray-400'}`}
-                aria-label={`Go to slide ${slideIndex + 1}`}
+                className={`transition-all duration-300 ${currentIndex === slideIndex ? 'text-blue-500 scale-150' : 'text-gray-400'}`}
               />
-            </div>
+            </button>
           ))}
         </div>
       </div>
