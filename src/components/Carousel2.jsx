@@ -3,9 +3,9 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 const Carousel2 = () => {
     const images = [
-        { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729884743/DBA_11-10-20242136_mxvtfr.jpg', alt: 'Image 1' },
-        { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729884743/shoot1_mmlziy.jpg', alt: 'Image 2' },
-        { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729884742/DBA_11-10-20242109_robfzq.jpg', alt: 'Image 3' },
+        { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730215083/IMG_8552_dlibro.jpg', alt: 'Image 1' },
+        { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730215105/IMG_8554_knp8ub.jpg', alt: 'Image 2' },
+        { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730215082/IMG_8553_zhvnxh.jpg', alt: 'Image 3' },
       ];
     
       const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +21,7 @@ const Carousel2 = () => {
      
     
       return (
-        <div className="relative w-full max-w-sm mx-auto h-[400px] overflow-hidden">
+        <div className="relative w-full max-w-sm mx-auto h-[400px] overflow-hidden shadow-md shadow-black">
           <div 
             className="flex transition-transform ease-out duration-500" 
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -31,7 +31,7 @@ const Carousel2 = () => {
                 key={index}
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[400px] object-contain flex-shrink-0"
+                className="w-full h-[400px] object-contain flex-shrink-0 py-3"
               />
             ))}
           </div>

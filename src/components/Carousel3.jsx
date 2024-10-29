@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import image from '../assets/golden/golden1.jpeg'
 
 const Carousel3 = () => {
     const images = [
-        { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729884743/DBA_11-10-20242136_mxvtfr.jpg', alt: 'Image 1' },
+        { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730209455/golden3_vo6lqe.jpg', alt: 'Image 1' },
         { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729884743/shoot1_mmlziy.jpg', alt: 'Image 2' },
         { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729884742/DBA_11-10-20242109_robfzq.jpg', alt: 'Image 3' },
       ];
@@ -21,9 +22,9 @@ const Carousel3 = () => {
      
     
       return (
-        <div className="relative w-full max-w-sm mx-auto h-[400px] overflow-hidden">
+        <div className="relative w-full max-w-sm mx-auto h-[400px] overflow-hidden px-10">
           <div 
-            className="flex transition-transform ease-out duration-500" 
+            className="flex transition-transform ease-out duration-500 " 
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {images.map((image, index) => (
@@ -31,7 +32,7 @@ const Carousel3 = () => {
                 key={index}
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[400px] object-contain flex-shrink-0"
+                className="w-full h-[400px] object-contain flex-shrink-0 "
               />
             ))}
           </div>

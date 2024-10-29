@@ -26,18 +26,20 @@ const Carousel = () => {
  
 
   return (
-    <div className="relative w-full max-w-sm mx-auto h-[400px] overflow-hidden ">
+    <div className="relative  max-w-sm mx-auto h-[400px] overflow-hidden shadow-md shadow-black ">
       <div 
-        className="flex transition-transform ease-out duration-500" 
+        className="flex transition-transform ease-out duration-500  " 
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
+             
           <img
             key={index}
             src={image.src}
             alt={image.alt}
-            className="w-full h-[400px] object-contain flex-shrink-0 "
+            className="w-full h-[400px] object-contain flex-shrink-0 rounded-md py-3 "
           />
+        
         ))}
       </div>
 
