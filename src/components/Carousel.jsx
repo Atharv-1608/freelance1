@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { IoChevronBackCircle, IoChevronForwardCircle } from 'react-icons/io5';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import image1 from '../assets/silver1.jpeg'
-import image2 from '../assets/silver2.jpeg'
-import image3 from '../assets/silver3.jpeg'
 
 const Carousel = () => {
  
