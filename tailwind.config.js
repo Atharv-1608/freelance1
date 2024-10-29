@@ -10,7 +10,8 @@ export default {
         'cali' : ["Cali",'cursive'],
         'hello' : ['hellnore','sans-serif'],
         'adelia' : ["adelia"],
-        'classy' : ["classy"]
+        'walkway' : ["walkway"],
+        'margey' : ["margey"],
       }
     },
   },

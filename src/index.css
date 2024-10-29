@@ -8,16 +8,11 @@
 }
 
 @font-face {
-    font-family: "hellnore";
-    src: url("./fonts/font1.ttf");
+    font-family: "walkway";
+    src: url('./fonts/Walkway.ttf');
 }
 
 @font-face {
-    font-family: "adelia";
-    src: url("./fonts/adelia.ttf");
-}
-
-@font-face {
-    font-family: "classy";
-    src: url("./fonts/classy.ttf");
+    font-family: "margey";
+    src: url('./fonts/MAREGY.otf');
 }
