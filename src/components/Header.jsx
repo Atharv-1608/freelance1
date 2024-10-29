@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiOutlineInstagram } from "react-icons/ai";
 import { IoMailOutline } from "react-icons/io5";
 
 const Header = () => {
