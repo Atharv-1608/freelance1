@@ -4,9 +4,9 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 const Carousel = () => {
  
   const images = [
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729277583/img2_ngsoen.jpg', alt: 'Image 1' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729277587/img4_g3irso.jpg', alt: 'Image 2' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1729277584/img3_hitxip.jpg', alt: 'Image 3' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214202/IMG_9185_pyob0b.jpg', alt: 'Image 1' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214202/IMG_9184_alqzki.jpg', alt: 'Image 2' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214194/IMG_9186_qlhsex.jpg', alt: 'Image 3' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
