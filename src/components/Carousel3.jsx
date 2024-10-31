@@ -4,11 +4,11 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 const Carousel3 = () => {
  
   const images = [
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379687/IMG_9286_ypwmdn.jpg', alt: 'Image 1' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379691/IMG_9283_wjgmyo.jpg', alt: 'Image 2' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379695/IMG_9282_plhxkd.jpg', alt: 'Image 3' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379677/IMG_9289_nmyreo.jpg', alt: 'Image 4' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379678/IMG_9284_ywusek.jpg', alt: 'Image 5' }
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730387157/IMG_9284_zmxfpl.jpg', alt: 'Image 1' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730387159/IMG_9286_n1urkr.jpg', alt: 'Image 2' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730387160/IMG_9282_tlgqwd.jpg', alt: 'Image 3' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730387152/IMG_9289_nahbvt.jpg', alt: 'Image 4' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730387163/IMG_9283_rmaazz.jpg', alt: 'Image 5' }
 
   ];
 
@@ -25,7 +25,7 @@ const Carousel3 = () => {
  
 
   return (
-    <div className="relative  max-w-sm mx-auto h-[500px] overflow-hidden  ">
+    <div className="relative  max-w-sm mx-auto h-[575px] overflow-hidden  ">
       <div 
         className="flex transition-transform ease-out duration-500  " 
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -36,7 +36,7 @@ const Carousel3 = () => {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="w-full h-[475px] object-contain flex-shrink-0 rounded-md py-3 "
+            className="w-full h-[550px] object-contain flex-shrink-0 rounded-md py-3 "
           />
         
         ))}
@@ -45,14 +45,14 @@ const Carousel3 = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-9 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
+        className="absolute top-1/2 left-5 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
         aria-label="Previous image"
       >
         <BsChevronCompactLeft className="w-10 h-10" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-9 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
+        className="absolute top-1/2 right-5 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
         aria-label="Next image"
       >
         <BsChevronCompactRight className="w-10 h-10" />

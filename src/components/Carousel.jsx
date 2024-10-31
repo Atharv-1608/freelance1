@@ -4,9 +4,9 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 const Carousel = () => {
  
   const images = [
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214194/IMG_9186_qlhsex.jpg', alt: 'Image 1' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214202/IMG_9184_alqzki.jpg', alt: 'Image 2' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214202/IMG_9185_pyob0b.jpg', alt: 'Image 3' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730386078/IMG_9186_fbwryb.jpg', alt: 'Image 1' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730386779/IMG_9184_1_bgvhnk.jpg', alt: 'Image 2' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730386080/IMG_9185_kflgav.jpg', alt: 'Image 3' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +22,7 @@ const Carousel = () => {
  
 
   return (
-    <div className="relative  max-w-sm mx-auto h-[500px] overflow-hidden  ">
+    <div className="relative  max-w-sm mx-auto h-[575px] overflow-hidden  ">
       <div 
         className="flex transition-transform ease-out duration-500  " 
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -33,7 +33,7 @@ const Carousel = () => {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="w-full h-[475px] object-contain flex-shrink-0 rounded-md py-3 "
+            className="w-full h-[550px] object-contain flex-shrink-0 rounded-md py-3 "
           />
         
         ))}
@@ -42,14 +42,14 @@ const Carousel = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-9 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
+        className="absolute top-1/2 left-5 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
         aria-label="Previous image"
       >
         <BsChevronCompactLeft className="w-10 h-10" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-9 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
+        className="absolute top-1/2 right-5 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
         aria-label="Next image"
       >
         <BsChevronCompactRight className="w-10 h-10" />
