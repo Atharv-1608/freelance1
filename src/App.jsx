@@ -1,5 +1,6 @@
 import Carousel from "./components/Carousel"
 import Carousel2 from "./components/Carousel2"
+import Carousel3 from "./components/Carousel3"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 
@@ -13,6 +14,7 @@ function App() {
     <div className="px-10 space-y-10 pt-10">
     <Carousel />
     <Carousel2 />
+    <Carousel3 />
     </div>
     <Footer />
     </div>

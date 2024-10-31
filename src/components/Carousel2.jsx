@@ -21,7 +21,7 @@ const Carousel2 = () => {
      
     
       return (
-        <div className="relative w-full max-w-sm mx-auto h-[400px] overflow-hidden shadow-md shadow-black">
+        <div className="relative w-full max-w-sm mx-auto h-[500px] overflow-hidden ">
           <div 
             className="flex transition-transform ease-out duration-500" 
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -31,7 +31,7 @@ const Carousel2 = () => {
                 key={index}
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[400px] object-contain flex-shrink-0 py-3"
+                className="w-full h-[475px] object-contain flex-shrink-0 py-3"
               />
             ))}
           </div>
@@ -39,14 +39,14 @@ const Carousel2 = () => {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute top-1/2 left-2 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
+            className="absolute top-1/2 left-9 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
             aria-label="Previous image"
           >
             <BsChevronCompactLeft className="w-10 h-10" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 right-2 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
+            className="absolute top-1/2 right-9 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
             aria-label="Next image"
           >
             <BsChevronCompactRight className="w-10 h-10" />

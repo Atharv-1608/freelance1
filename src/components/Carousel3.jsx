@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
-const Carousel = () => {
+const Carousel3 = () => {
  
   const images = [
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214194/IMG_9186_qlhsex.jpg', alt: 'Image 1' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214202/IMG_9184_alqzki.jpg', alt: 'Image 2' },
-    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730214202/IMG_9185_pyob0b.jpg', alt: 'Image 3' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379687/IMG_9286_ypwmdn.jpg', alt: 'Image 1' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379691/IMG_9283_wjgmyo.jpg', alt: 'Image 2' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379695/IMG_9282_plhxkd.jpg', alt: 'Image 3' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379677/IMG_9289_nmyreo.jpg', alt: 'Image 4' },
+    { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730379678/IMG_9284_ywusek.jpg', alt: 'Image 5' }
+
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -72,4 +75,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Carousel3;
