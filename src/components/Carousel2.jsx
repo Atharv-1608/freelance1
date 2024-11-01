@@ -21,7 +21,7 @@ const Carousel2 = () => {
      
     
       return (
-        <div className="relative w-full max-w-sm mx-auto h-[575px] overflow-hidden ">
+        <div className="relative w-full max-w-sm mx-auto h-[560px] overflow-hidden ">
           <div 
             className="flex transition-transform ease-out duration-500" 
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -53,13 +53,13 @@ const Carousel2 = () => {
           </button>
     
           {/* Dots Indicator */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
             {images.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full ${
-                  index === currentIndex ? 'bg-white' : 'bg-white/50'
+                  index === currentIndex ? 'bg-black/70' : 'bg-gray-400'
                 }`}
                 aria-label={`Go to image ${index + 1}`}
               />

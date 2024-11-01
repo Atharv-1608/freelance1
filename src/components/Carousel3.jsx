@@ -65,7 +65,7 @@ const Carousel3 = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? 'bg-white' : 'bg-white/50'
+              index === currentIndex ? 'bg-black/70' : 'bg-gray-400'
             }`}
             aria-label={`Go to image ${index + 1}`}
           />
