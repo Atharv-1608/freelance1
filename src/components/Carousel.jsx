@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 const Carousel = () => {
- 
   const images = [
     { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730386078/IMG_9186_fbwryb.jpg', alt: 'Image 1' },
     { src: 'https://res.cloudinary.com/dribsk7iy/image/upload/v1730386779/IMG_9184_1_bgvhnk.jpg', alt: 'Image 2' },
@@ -19,23 +18,19 @@ const Carousel = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
- 
-
   return (
-    <div className="relative  max-w-sm mx-auto h-[575px] overflow-hidden sm:mb-[-2em]  ">
+    <div className="relative h-[550px] overflow-hidden">
       <div 
-        className="flex transition-transform ease-out duration-500  " 
+        className="flex transition-transform ease-out duration-500" 
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
-             
           <img
             key={index}
             src={image.src}
             alt={image.alt}
-            className="w-full h-[550px] object-contain flex-shrink-0 rounded-md py-3 "
+            className="w-full h-[550px] object-contain flex-shrink-0 rounded-md"
           />
-        
         ))}
       </div>
 
@@ -56,7 +51,7 @@ const Carousel = () => {
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-2  ">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
             key={index}

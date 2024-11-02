@@ -11,7 +11,7 @@ const Footer = () => {
         window.open("mailto:datharv6@gmail.com")
     }
   return (
-    <footer className="shadow-inner text-black">
+    <footer className="shadow-inner text-black my-[-25px]">
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
