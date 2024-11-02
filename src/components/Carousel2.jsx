@@ -53,7 +53,7 @@ const Carousel2 = () => {
           </button>
     
           {/* Dots Indicator */}
-          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-2 pb-2">
+          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-2 pb-9 md:pb-7 lg:pb-5">
             {images.map((_, index) => (
               <button
                 key={index}
