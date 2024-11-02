@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="bg-[#f2f3f4]">
     <Header />
-    <div className="px-10  pt-7">
+    <div className="px-10  pt-3">
     <Carousel3 />
     <Carousel />
     <Carousel2 />
