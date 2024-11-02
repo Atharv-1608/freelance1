@@ -25,7 +25,7 @@ const Carousel3 = () => {
  
 
   return (
-    <div className="relative  max-w-sm mx-auto h-[575px] overflow-hidden  ">
+    <div className="relative  max-w-sm mx-auto h-[575px] overflow-hidden ">
       <div 
         className="flex transition-transform ease-out duration-500  " 
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -59,7 +59,7 @@ const Carousel3 = () => {
       </button>
 
       {/* Dots Indicator */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-2 ">
         {images.map((_, index) => (
           <button
             key={index}
